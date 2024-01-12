@@ -41,7 +41,7 @@ function App() {
       {isLogin.length > 0 ? <Navbar2 setIsLogin={setIsLogin} /> : <Navbar />}
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path='' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/search' element={<Search />} />
           <Route path="/pet-detail/:id" element={<PetDetails />} />
           <Route path='/about-us' element={<AboutUs />} />
