@@ -3,13 +3,18 @@
 import React from 'react';
 import HomePetCard from './HomePetCard'; // Import the Card component
 import './cardcontainer.css'; // Import your CSS styles
+import petImg1 from '../../assets/img/Home/petCard1.PNG'
+import petImg2 from '../../assets/img/Home/petCard2.PNG'
+import petImg3 from '../../assets/img/Home/petCard3.PNG'
+import petImg4 from '../../assets/img/Home/petCard4.PNG'
+import petImg5 from '../../assets/img/Home/petCard5.PNG'
 
 function PetCardsContainer() {
   const pets = [
     {
       initialRotation: Math.floor(Math.random() * 60) - 30,
       initialPosition: { x: getRandomInt(-50, 50), y: getRandomInt(-50, 50) },
-      image: 'src/assets/img/Home/Pet_card_1.jpg',
+      image: petImg1,
       bgColor: '#EADBAA',
       textColor: '#393838',
       title: 'Mateo',
@@ -18,7 +23,7 @@ function PetCardsContainer() {
     {
       initialRotation: Math.floor(Math.random() * 60) - 30,
       initialPosition: { x: getRandomInt(-50, 50), y: getRandomInt(-50, 50) },
-      image: 'src/assets/img/Home/Pet_card_2.jpg',
+      image: petImg2,
       bgColor: '#F9804F',
       textColor: 'white',
       title: 'Firulais',
@@ -27,7 +32,7 @@ function PetCardsContainer() {
     {
       initialRotation: Math.floor(Math.random() * 60) - 30,
       initialPosition: { x: getRandomInt(-50, 50), y: getRandomInt(-50, 50) },
-      image: 'src/assets/img/Home/Pet_card_3.jpg',
+      image: petImg3,
       bgColor: '#393838',
       textColor: 'white',
       title: 'Cookie',
@@ -36,7 +41,7 @@ function PetCardsContainer() {
     {
       initialRotation: Math.floor(Math.random() * 60) - 30,
       initialPosition: { x: getRandomInt(-50, 50), y: getRandomInt(-50, 50) },
-      image: 'src/assets/img/Home/Pet_card_4.jpg',
+      image: petImg4,
       bgColor: '#FEC7B2',
       textColor: '#393838',
       title: 'Coco',
@@ -45,7 +50,7 @@ function PetCardsContainer() {
     {
       initialRotation: Math.floor(Math.random() * 60) - 30,
       initialPosition: { x: getRandomInt(-50, 50), y: getRandomInt(-50, 50) },
-      image: 'src/assets/img/Home/Pet_card_5.jpg',
+      image: petImg5,
       bgColor: '#930001',
       textColor: 'white',
       title: 'Max',
